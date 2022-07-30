@@ -1,0 +1,13 @@
+$colors: (
+  'black': #000,
+);
+
+@each $index, $color in $colors {
+  .bg-#{$index} {
+    background: $color !important;
+  }
+
+  .text-#{$index} {
+    color: $color !important;
+  }
+}
